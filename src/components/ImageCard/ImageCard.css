@@ -29,6 +29,7 @@
     font-family: 'roboto';
     background: white;
     text-align: center;
+    line-height: 30px;
 }
 
 .post__author__title {
@@ -39,4 +40,11 @@
 
 .post__author__name {
     color: black;
+}
+
+.post__icon {
+    width: 25px;
+    float: right;
+    margin-right: 20px;
+    vertical-align: middle;
 }
