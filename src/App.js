@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import useObserveScroll from './hooks/useObserveScroll';
+import useFetchData from './hooks/useFetchData';
+import Spinner from './components/Spinner';
+import ImageCard from './components/ImageCard';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const { loadRef, page } = useObserveScroll();
+    const { loading, photos } = useFetchData(page);
+    let index = 1;
+
+    return (
+        <div className="App">
+            <div className="image__container">
+                {photos?.map((photo) => (
+                    <ImageCard key={index++} photo={photo} />
+                ))}
+            </div>
+            <div ref={loadRef}>{loading && <Spinner />}</div>
+        </div>
+    );
 }
 
 export default App;
