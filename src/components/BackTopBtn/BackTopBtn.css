@@ -1,0 +1,32 @@
+.top__btn {
+    position: fixed; 
+    width: 100%;
+    left: 90%;
+    bottom: 80px;
+    height: 20px;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    color: orange;
+}
+
+button {
+    background: orange;
+    text-decoration: none;
+    border-radius: 50%;
+    display: block;
+    height: 60px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+button::after {
+    content:"\25b2";
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 5px;
+}
