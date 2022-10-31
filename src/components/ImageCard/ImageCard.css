@@ -20,6 +20,7 @@
 }
 
 .post__author {
+    background-color: #E0E0E0;
     display: inline-block;
     padding: 10px 0;
     width: 70%;
@@ -27,14 +28,13 @@
     border-bottom-left-radius: 0.375rem;
     border-bottom-right-radius: 0.375rem;
     font-family: 'roboto';
-    background: white;
     text-align: center;
     line-height: 30px;
 }
 
 .post__author__title {
-    color: grey;
-    padding-right: 5px;
+    color: #696969;
+    padding-right: 10px;
     font-weight: bold;
 }
 
@@ -47,4 +47,5 @@
     float: right;
     margin-right: 20px;
     vertical-align: middle;
+    cursor: pointer;
 }
