@@ -3,6 +3,7 @@ import useObserveScroll from './hooks/useObserveScroll';
 import useFetchData from './hooks/useFetchData';
 import Spinner from './components/Spinner';
 import ImageCard from './components/ImageCard';
+import BackTopBtn from './components/BackTopBtn';
 
 function App() {
     const { loadRef, page } = useObserveScroll();
@@ -16,6 +17,7 @@ function App() {
                     <ImageCard key={index++} photo={photo} />
                 ))}
             </div>
+            <BackTopBtn />
             <div ref={loadRef}>{loading && <Spinner />}</div>
         </div>
     );
