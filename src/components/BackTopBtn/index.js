@@ -2,14 +2,14 @@ import React, {useState} from 'react';
 import './BackTopBtn.css';
 
 const BackTopBtn = () =>{
-  
+    const showTopBtnThreshold = 200;  
     const [visible, setVisible] = useState(false)
     
     const observeTop = () => {
         const distanceToTop = document.documentElement.scrollTop;
-        if (distanceToTop > 200){
+        if (distanceToTop > showTopBtnThreshold){
             setVisible(true)
-        } else if (distanceToTop <= 200){
+        } else if (distanceToTop <= showTopBtnThreshold){
             setVisible(false)
         }
     };
