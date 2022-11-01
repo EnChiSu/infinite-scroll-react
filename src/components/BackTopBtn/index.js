@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {IoMdArrowDropupCircle} from 'react-icons/fa';
 import './BackTopBtn.css';
 
 const BackTopBtn = () =>{
@@ -25,8 +24,9 @@ const BackTopBtn = () =>{
     window.addEventListener('scroll', observeTop);
     
     return (
-        <div className='top__btn'>
+        <div className='top__btn__container'>
             <button
+                className='top__btn'
                 onClick={scrollToTop} 
                 style={{display: visible ? 'inline' : 'none'}} 
             ></button>

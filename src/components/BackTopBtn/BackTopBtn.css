@@ -1,4 +1,4 @@
-.top__btn {
+.top__btn__container {
     position: fixed; 
     width: 100%;
     left: 90%;
@@ -10,7 +10,7 @@
     color: orange;
 }
 
-button {
+.top__btn {
     background: orange;
     text-decoration: none;
     border-radius: 50%;
@@ -21,8 +21,8 @@ button {
     cursor: pointer;
 }
 
-button::after {
-    content:"\25b2";
+.top__btn::after {
+    content:"\2B9D";
     display: block;
     color: white;
     font-weight: bold;
