@@ -3,6 +3,7 @@ The project contains three features, which implement with React:
 1. infinite scroll
 2. collapsible menu bar
 3. back to top button
+![image](https://github.com/EnChiSu/infinite-scroll-react/blob/main/Demo.gif)
 
 
 ## Run Locally
