@@ -19,7 +19,5 @@ header {
 .image__container {
     position: relative;
     overflow: hidden;
-    background: white;
     width: 70%;
-    border-radius: 10px;
 }
